@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Repositories Listing</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Github Repositories Listing</h2>
+    
+    <!-- Search Bar (Optional) -->
+    <div class="mb-3">
+        <input type="text" id="usernameInput" class="form-control" placeholder="Enter GitHub Username">
+        <button class="btn btn-primary" onclick="fetchRepositories()">Search</button>
+    </div>
+
+    <!-- Loader -->
+    <div id="loader" class="text-center">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+
+    <!-- Repository Listing -->
+    <div id="repoList" class="mt-4">
+        <!-- Repositories will be displayed here -->
+    </div>
+
+    <!-- Pagination -->
+    <div id="pagination" class="mt-4">
+        <!-- Pagination controls will be displayed here -->
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
